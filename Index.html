@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+    
+    <link rel="stylesheet" href="CSS/Style.css">
+    <script src="JS/Script.js" defer></script>
+   
+  </head>
+  <body>
+    <main>
+      <div class="conteudoesquerdatodo">
+        <div class="chatbotvisual">
+          <ul id="messageList" class="message-list"></ul>
+
+          <!-- aqui começa o input -->
+          <div class="searchbar-chatbot">
+            <div class="search-chatbot">
+              <input
+                id="messageInput"
+                type="text"
+                name=""
+                placeholder="Mensagem"
+                class="search-box-chatbot"
+              />
+            </div>
+            <a onclick="addMessage()" class="searchbtn-chatbot">
+              <img src="imagens/send.png" alt="envie" />
+            </a>
+          </div>
+          <!-- acaba -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

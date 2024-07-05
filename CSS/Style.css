@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Alata", sans-serif;
+  font-family: "Jost", sans-serif;
+}
+main {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+/* começa aqui a parte da barra de mensagem */
+.conteudoesquerdatodo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chatbotvisual {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 6px solid #89938f;
+  border-radius: 15px;
+  width: 880px;
+  height: 700px;
+  padding: 10px 20px;
+  margin: 0 20px;
+}
+
+.searchbar-chatbot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-chatbot {
+  width: 590px;
+  height: 51px;
+  border-radius: 100px;
+  background: #30107a;
+  display: flex;
+  align-items: center;
+}
+
+.search-box-chatbot {
+  border: none;
+  color: white;
+  outline: none;
+  background: none;
+  width: 530px;
+  height: 100%;
+  font-size: 20px;
+  padding: 0 16px;
+}
+
+.search-box-chatbot::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.searchbtn-chatbot {
+  cursor: pointer;
+  margin-left: -50px;
+}
+
+.searchbtn-chatbot img {
+  width: 38px;
+  transition: all 0.3s ease;
+}
+
+.searchbtn-chatbot img:hover {
+  transform: scale(1.1);
+  background-color: #89938f;
+  border-radius: 40px;
+}
+
+.searchbtn img {
+  width: 18px;
+  height: 18px;
+}
+
+.searchbnt-a-chatbot {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1385px) {
+  .search-chatbot {
+    width: 400px;
+  }
+  .search-box-chatbot {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .search-chatbot {
+    width: 350px;
+  }
+  .search-box-chatbot {
+    width: 300px;
+  }
+}
+
+/* parte chat */
+.message-list {
+  width: 100%;
+  overflow-y: auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chat-message {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.sent {
+  justify-content: flex-end;
+  text-align: right;
+  background-color:#ddd;
+}
+
+.received {
+  justify-content: flex-start;
+  text-align: left;
+  background-color: #f1f0f0;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
